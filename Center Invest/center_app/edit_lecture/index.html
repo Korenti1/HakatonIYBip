@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>edit_lecture</title>
+</head>
+<body>
+    <h1>Edit Lecture - {{ lecture.title }}</h1>
+ <hr>
+
+ <!-- Lecture Edit Form -->
+ <form method="POST">
+  {% csrf_token %}
+  {{ form.as_p }}
+  <input type="submit" name="edit_lecture" value="Save Changes">
+ </form>
+ <hr>
+    <form method="post">
+        {% csrf_token %}
+        {{ task_form.as_p }}
+        {{ answer_form.as_p }}
+        <button type="submit" name="create_task">Отправить</button>
+    </form>
+
+    <div id="task-list">
+            {% for task in tasks %}
+                <li>{{ task }}</li>
+            {% endfor %}
+    </div>
+</body>
+</html>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Edit Task</title>
+</head>
+<body>
+    {{ course }}
+    {{ lecture }}
+    {{ task }}
+    {{ answer }}
+    <form method="post">
+        {% csrf_token %}
+        {{ form.as_p }}
+        {{ answer_form.answer1 }}<br><br>
+        {{ answer_form.answer2 }}<br><br>
+        {{ answer_form.answer3}}<br><br>
+        {{ answer_form.true_answer }}
+        <button name="edit_task">Подтвердить изменения</button>
+    </form>
+</body>
+</html>

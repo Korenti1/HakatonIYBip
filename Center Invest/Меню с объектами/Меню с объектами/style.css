@@ -1,0 +1,41 @@
+#lor {
+  padding: 0px 0 0 0;
+  padding-left: 720px;
+  position: absolute;
+}
+
+div {
+  color: #fff;
+  width: 250px;
+  padding-left: 10px;
+  height: 96vh;
+  background-image: linear-gradient(30deg, #11cf4d, #055e21);
+  border-top-right-radius: 30px;
+}
+
+div h2 {
+  padding: 40px 0 0 0;
+  cursor: pointer;
+  padding-left: 5px;
+}
+
+div a {
+  font-size: 20px;
+  color: #fff;
+  display: block;
+  padding: 12px;
+  padding-left: 30px;
+  text-decoration: none;
+  outline: none;
+}
+
+div a:hover {
+  color: #086024;
+  background: #fff;
+  position: relative;
+  background-color: #fff;
+  border-top-left-radius: 22px;
+  border-bottom-left-radius: 22px;
+}
+
+

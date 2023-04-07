@@ -1,0 +1,21 @@
+#messages_container {
+    border: 10px solid #50b848;
+    margin-top: 10px;
+    background-color: #50b848;
+}
+
+#send_message_button {
+    color: black;
+    margin-top: 1000px;
+}
+
+#send_message_button {
+    position: absolute;
+    margin-left: 300px;
+}
+
+input {
+    width: 1520px;
+    color: white;
+    background-color: #50b848;
+}
