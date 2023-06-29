@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3.2</title>
+</head>
+<body>
+    
+    <form>
+        <label for="name">Введите ваше имя:</label>
+        <input type="text" id="name" name="name">
+        <p id="name-alert" style="display:none; color: red;">Внимательно вводите свое имя</p>
+
+        <label>Что вам нравится больше?</label>
+        <input type="checkbox" id="ice-cream" name="food" value="ice-cream">
+        <label for="ice-cream">Мороженое</label>
+
+        <input type="checkbox" id="chocolate" name="food" value="chocolate">
+        <label for="ice-cream">Шоколад</label>
+
+        <button onclick="showAlert()">Отправить</button>
+    </form>>
+    <p id="thank-you" style="display: none; color: green;">Спасибо за участие в опросе!</p>
+
+    <script src="script2.js">
+        var button = document.querySelector("button");
+        button.addEventListener("click", function(event) {
+            event.preventDefault();
+            document.getElementById("thank-you").style.display = "block";
+        });
+    </script>
+</body>
+</html>
