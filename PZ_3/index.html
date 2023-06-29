@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Практическая №3</title>
+</head>
+<body>
+    <style>
+        ul{
+            padding: 0px;
+            margin: 0px;
+        }
+        .menu1 ul{
+            color: blue; 
+            list-style-position: inside;}
+        .menu1 a:link, .menu1 a:visited{
+            text-decoration: none;	
+            color: blue;
+            font: 13px Arial;
+            }
+        .menu1 a:hover{
+            text-decoration: underline;
+            color: red;
+        }
+        .clearfix{
+            clear: both;
+        }
+        .menu2 ul{list-style-type: none; width: 200px}
+        .menu2 li{margin-bottom: 5px;}
+        .menu2 a{
+            text-decoration: none;
+            color: blue;
+            font: 13px Arial;
+            border: 1px solid blue;
+            display: block;
+            padding: 0px 5px;
+            line-height: 30px;
+        }
+        .menu2 a:hover{
+        font-weight: bold
+        }
+
+        .menu3 ul{list-style-type: none; width: 200px}
+        .menu3 li{margin-bottom: 5px;}
+        .menu3 a{
+            text-decoration: none;
+            color: rgb(255, 255, 255);
+            font: 13px Arial;
+            background-color: gray;
+            border: 1px solid rgb(63, 63, 66);
+            display: block;
+            padding: 0px 5px;
+            line-height: 30px;
+        }
+        .menu3 a:hover{
+        font-weight: bold;
+        background-color: white;
+        color: rgb(0, 0, 0);
+        }
+
+        .menu4 ul{list-style-type: none; width: 200px}
+        .menu4 li{
+            margin-bottom: 5px;
+        }
+        .menu4 li:hover a::after{
+            content: url('img/plane.png');
+            position: relative;
+            float: right;
+        }
+        .menu4 a{
+            text-decoration: none;
+            background-color: blue;
+            color: rgb(255, 255, 255);
+            font: 13px Arial;
+            border: 1px solid blue;
+            display: block;
+            padding: 0px 5px;
+            line-height: 30px;
+        }
+        .menu4 a:hover{
+        font-weight: bold;
+        background-color: white;
+        color: blue;
+        }
+        .menu5 ul{list-style-type: none;}
+        .menu5 li{margin-right: 4px; float: left;}
+        .menu5 a{
+            text-decoration: none;
+            color: blue;
+            font: 13px Arial;
+            border: 1px solid blue;
+            padding: 5px;
+        }
+        .menu5 a:hover, .menu5 a.active{
+            color: red;
+            
+        }
+        .menu6 ul{list-style-type: none;}
+        .menu6 li{margin-right: 4px; float: left;}
+        .menu6 a{
+            text-decoration: none;
+            color: blue;
+            font: 13px Arial;
+            border: 1px solid blue;
+            padding: 5px;
+        }
+        .menu6 a:hover, .menu6 a.active{
+            color: rgb(255, 255, 255);
+            background-color: gray;
+            
+        }
+        .menu6 ul{list-style-type: none;}
+        .menu6 li{margin-right: 4px; float: left;}
+        .menu6 a{
+            text-decoration: none;
+            color: blue;
+            font: 13px Arial;
+            border: 1px solid blue;
+            padding: 5px;
+        }
+        .menu6 a:hover, .menu6 a.active{
+            color: rgb(255, 255, 255);
+            background-color: gray;
+            
+        }
+        .menu7 ul {
+	list-style-type: none;
+}
+.menu7 li {
+	float: left;
+}
+.menu7 figure {
+	text-decoration: none;
+	font: 13px Arial;
+	text-align: center;
+}
+.menu7 figcaption {
+	color: rgb(91, 89, 89);
+}
+.menu7 img {
+	filter: grayscale(100%);
+}
+.menu7 figure:hover figcaption {
+	filter: grayscale(0%);
+	color: blue;
+}
+.menu7 figure:hover img {
+	filter: grayscale(0%);
+	color: blue;
+}
+
+.menu8 {
+	width: 100%;
+}
+.menu8 ul {
+	list-style-type: none;
+	width: 100%;
+	height: 100%;
+}
+.menu8 li {
+	float: left;
+}
+.menu8 a {
+	text-decoration: none;
+	color: azure;
+	font: 13px Arial;
+	background-color: rgb(218, 111, 72);
+	width: 35px;
+    height: 35px;
+	padding: 5px;
+}
+.menu8 a:hover, .menu8 a.active {
+	color: white;
+	background-color: red;
+}
+
+.weekend{color: rgb(146, 116, 81);}
+
+table{text-align: center;border-collapse: collapse;}
+td{padding: 3px;}
+td:hover
+.days{
+	border-bottom: solid;
+}
+tr .days:hover {
+	color: black;
+}
+td:hover {
+	color: blueviolet;
+}
+    </style>
+    <div class="menu1">
+        <ul class="clearfix">
+            <li >
+                <a>1</a>
+            </li>
+            <li >
+                <a>2</a>
+            </li>
+            <li>
+                <a>3</a>
+            </li>
+        </ul>
+    </div>
+    <br>
+    <br>
+    <div class="menu2">
+        <ul>
+            <li>
+                <a>1</a>
+            </li>
+            <li>
+                <a>2</a>
+            </li>
+            <li>
+                <a>3</a>
+            </li>
+        </ul>
+    </div>
+    <br>
+    <br>
+    <div class="menu3">
+        <ul>
+            <li>
+                <a>1</a>
+            </li>
+            <li>
+                <a>2</a>
+            </li>
+            <li>
+                <a>3</a>
+            </li>
+        </ul>
+    </div>
+    <br>
+    <br>
+    <div class="menu4">
+        <ul>
+            <li>
+                <a>1</a>
+            </li>
+            <li>
+                <a>2</a>
+            </li>
+            <li>
+                <a>3</a>
+            </li>
+        </ul>
+    </div>
+    <br>
+    <br>
+    <div class="menu5">
+        <ul>
+            <li>
+                <a>123454355365464</a>
+            </li>
+            <li>
+                <a>123454355365464</a>
+            </li>
+            <li>
+                <a>123454355365464</a>
+            </li>
+        </ul>
+    </div>
+    <br>
+    <br>
+    <div class="menu6">
+        <ul>
+            <li>
+                <a>123454355365464</a>
+            </li>
+            <li>
+                <a>123454355365464</a>
+            </li>
+            <li>
+                <a>123454355365464</a>
+            </li>
+        </ul>
+    </div>
+    <div class="menu7">
+        <ul>
+            <li>
+                <figure>
+                    <img src=".\img\tour1.png" width="50" height="50"/>
+                    <figcaption>авиабилеты</figcaption>
+                </figure>
+            </li>
+            <li>
+                <figure>
+                    <img src=".\img\tour2.png" width="50" height="50"/>
+                    <figcaption>чартеры</figcaption>
+                </figure>
+            </li>
+            <li>
+                <figure>
+                    <img src=".\img\tour3.png" width="50" height="50"/>
+                    <figcaption>билеты</figcaption>
+                </figure>
+            </li>
+            <li>
+                <figure>
+                    <img src=".\img\tour4.png" width="50" height="50"/>
+                    <figcaption>гостиницы</figcaption>
+                </figure>
+            </li>
+            <li>
+                <figure>
+                    <img src=".\img\tour5.png" width="50" height="50"/>
+                    <figcaption>туризм</figcaption>
+                </figure>
+            </li>
+        </ul>
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <div class="menu8">
+        <ul>
+            <li><a href="#">Главная</a></li>
+            <li><a href="#">Новости</a></li>
+            <li><a href="#">Контакты</a></li>
+            <li><a href="#">О компании</a></li>
+            <li><a href="#">Как добраться</a></li>
+        </ul>
+    </div>
+    <br>
+    <br>
+    <table>
+        <tbody>
+            <tr class="dats">
+                <td>Пн</td>
+                <td>Вт</td>
+                <td>Ср</td>
+                <td>Чт</td>
+                <td>Пт</td>
+                <td class="weekend">Сб</td>
+                <td class="weekend">Вс</td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td class="weekend">1</td>
+                <td class="weekend">2</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>4</td>
+                <td>5</td>
+                <td>6</td>
+                <td>7</td>
+                <td class="weekend">8</td>
+                <td class="weekend">9</td>
+            </tr>
+            <tr>
+                <td>10</td>
+                <td>11</td>
+                <td>12</td>
+                <td>13</td>
+                <td>14</td>
+                <td class="weekend">15</td>
+                <td class="weekend">16</td>
+            </tr>
+            <tr>
+                <td>17</td>
+                <td>18</td>
+                <td>19</td>
+                <td>20</td>
+                <td>21</td>
+                <td class="weekend">22</td>
+                <td class="weekend">23</td>
+            </tr>
+            <tr>
+                <td>24</td>
+                <td>25</td>
+                <td>26</td>
+                <td>27</td>
+                <td>28</td>
+                <td class="weekend">29</td>
+                <td class="weekend">30</td>
+            </tr>
+            <tr>
+                <td>30</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
